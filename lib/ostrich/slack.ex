@@ -1,9 +1,9 @@
 defmodule Ostrich.Slack do
   use Slack
 
-  @token Application.get_env(:ostrich, __MODULE__)[:token]
+ # @token Application.get_env(:ostrich, __MODULE__)[:token]
 
-  def start_link, do: start_link(@token, [])
+  def start_link, do: start_link(:token, [])
 
   def handle_message(message = %{type: "message", text: text}, slack, state) do
     if text == "<@#{slack.me.id}>: hello" do
