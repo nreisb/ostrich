@@ -1,4 +1,4 @@
 use Mix.Config
 
-# config :winston, Winston.Slack,
+# config :ostrich, Ostrich.Slack,
 #   token: "SLACK BOT API TOKEN"

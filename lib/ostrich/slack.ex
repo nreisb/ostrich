@@ -1,7 +1,7 @@
-defmodule Winston.Slack do
+defmodule Ostrich.Slack do
   use Slack
 
-  @token Application.get_env(:winston, __MODULE__)[:token]
+  @token Application.get_env(:ostrich, __MODULE__)[:token]
 
   def start_link, do: start_link(@token, [])
 

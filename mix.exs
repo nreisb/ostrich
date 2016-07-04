@@ -1,8 +1,8 @@
-defmodule Winston.Mixfile do
+defmodule Ostrich.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :winston,
+    [app: :ostrich,
      version: "0.0.1",
      elixir: "~> 1.2",
      build_embedded: Mix.env == :prod,
@@ -12,7 +12,7 @@ defmodule Winston.Mixfile do
 
   def application do
     [applications: [:logger, :slack],
-     mod: {Winston, []}]
+     mod: {Ostrich, []}]
   end
 
   defp deps do
