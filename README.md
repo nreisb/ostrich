@@ -1,6 +1,6 @@
-# Winston
+# Ostrich
 
-The world's most polite Slack bot.
+The world's worst Slack bot.
 
 [Read the blog post][1]
 
